@@ -22,3 +22,9 @@
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+#cards-page {
+  background-color: lightgray;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
