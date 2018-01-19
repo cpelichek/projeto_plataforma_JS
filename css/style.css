@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: center;
 }
-/*
-.container-gameScreen {
+
+/* .container-gameScreen {
   background-color: red;
   width: 100%;
   height: 40rem;
@@ -15,10 +15,10 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 30%;
+  margin-top: 35%;
 }
 
-/* .container-gameButtons {
+ .container-gameButtons {
   justify-content: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -39,10 +39,42 @@
 #gameWindow.fullscreen {
   width: 100%;
   height: 100%;
-} */
+}
 
 .game{
   position: absolute !important;
-  top: 40% !important;
+  top: 10% !important;
   left: 35% !important;
+}
+
+.texto-projeto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 5rem;
+}
+
+.texto-projeto:hover {
+  background-color: lightgray;
+}
+
+.texto-mastertech {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 5rem;
+}
+
+.texto-mastertech:hover {
+  background-color: lightgray;
+}
+
+#aboutPage p {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+#aboutPage img {
+  max-height: 25rem;
 }
