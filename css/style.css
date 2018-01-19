@@ -3,21 +3,22 @@
   flex-direction: column;
   align-items: center;
 }
-
+/*
 .container-gameScreen {
   background-color: red;
   width: 100%;
   height: 40rem;
-}
+} */
 
 .container-instructions {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-top: 30%;
 }
 
-.container-gameButtons {
+/* .container-gameButtons {
   justify-content: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -38,4 +39,10 @@
 #gameWindow.fullscreen {
   width: 100%;
   height: 100%;
+} */
+
+.game{
+  position: absolute !important;
+  top: 40% !important;
+  left: 35% !important;
 }
