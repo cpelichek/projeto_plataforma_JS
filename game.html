@@ -6,16 +6,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Jogo de Plataforma</title>
+  <!-- Refs do jogo -->
   <link rel="stylesheet" href="css/game.css">
   <script type="text/javascript" src="js/game.js">
     let simpleLevel = new Level(simpleLevelPlan);
     let display = new DOMDisplay(document.body, simpleLevel);
     // display();
   </script>
+
+  <!-- Ref de estilo -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Ref do Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 </head>
 
 <body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">TÍTULO DO PROJETO</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="game.html">Jogo<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="about.html">Projeto<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="team.html">Equipe<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Container geral -->
+  <div class="container-geral">
+    <!-- Container do game -->
+    <div class="container-gameScreen"></div>
+    <!-- Container de instruções -->
+    <div class="container-instructions">
+      <h2>Instruções para jogar</h2>
+      <p>Clique na tela de jogo para jogar<br>Use as setas do teclado para jogar<br>Colete todas as moedas para ganhar<br>Cuidado com a lava!</p>
+    </div>
+    <!-- Container de buttons -->
+    <div class="container-gameButtons">
+      <button type="button" class="btn btn-primary btn-sm">- Zoom</button>
+      <button type="button" class="btn btn-primary btn-lg">Toggle Fullscreen</button>
+      <button type="button" class="btn btn-primary btn-sm">+ Zoom</button>
+    </div>
+  </div>
 </body>
 
 </html>
