@@ -5,9 +5,12 @@
 }
 
 .container-gameScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: red;
   width: 100%;
-  height: 40rem;
+  height: 20rem;
 }
 
 .container-instructions {
@@ -33,9 +36,10 @@
   background-color: gold;
   width: 50%;
   height: 50%;
+
 }
 
-#gameWindow.fullscreen {
+#gameWindow.enterFullscreen {
   width: 100%;
   height: 100%;
 }
