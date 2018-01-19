@@ -8,8 +8,8 @@
   <title>Jogo de Plataforma</title>
   <!-- Refs do jogo -->
   <link rel="stylesheet" href="css/game.css">
-  <script defer type="text/javascript" src="js/game.js">
-  </script>
+  <script defer type="text/javascript" src="js/game.js"></script>
+  <script defer type="text/javascript" src="js/controls.js"></script>
 
   <!-- Ref de estilo -->
   <link rel="stylesheet" href="css/style.css">
@@ -46,7 +46,9 @@
   <!-- Container geral -->
   <div class="container-geral">
     <!-- Container do game -->
-    <div class="container-gameScreen"></div>
+    <div class="container-gameScreen">
+      <div id="gameWindow"></div>
+    </div>
     <!-- Container de instruções -->
     <div class="container-instructions">
       <h2>Instruções para jogar</h2>
@@ -55,7 +57,7 @@
     <!-- Container de buttons -->
     <div class="container-gameButtons">
       <button type="button" class="btn btn-primary btn-sm">- Zoom</button>
-      <button type="button" class="btn btn-primary btn-lg">Toggle Fullscreen</button>
+      <button id="fullscreenBtn" type="button" class="btn btn-primary btn-lg">Toggle Fullscreen</button>
       <button type="button" class="btn btn-primary btn-sm">+ Zoom</button>
     </div>
   </div>
