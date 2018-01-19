@@ -11,7 +11,7 @@ contato: cpelichek@gmail.com
 */
 
 //variáveis globais:
-let scale = 20; //determina a escala dos objetos do jogo, em pixels
+let scale = 45; //determina a escala dos objetos do jogo, em pixels
 
 //arrays:
 let simpleLevelPlan = [ //array usado para construir o nível
