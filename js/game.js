@@ -18,8 +18,9 @@ let simpleLevelPlan = [ //array usado para construir o nível
   "                      ",
   "                      ",
   "  x              = x  ",
-  "  x            o o x  ",
-  "  x @        xxxxx x  ",
+  "  x                x  ",
+  "  x          o o   x  ",
+  "  x @      xxxxx   x  ",
   "  xxxxx            x  ",
   "      x!!!!!!!!!!!!x  ",
   "      xxxxxxxxxxxxxx  ",
@@ -112,8 +113,7 @@ function Coin(pos) { //construtor do objeto moeda
 };
 Coin.prototype.type = "coin";
 
-let simpleLevel = new Level(simpleLevelPlan);
-console.log("Dimensões do nível: " + simpleLevel.width + " por " + simpleLevel.height);
+
 
 let elt = function(name, className) { //cria um element tag, que coloca <div> e, onde precisar, <class>
   let elt = document.createElement(name);
@@ -198,12 +198,8 @@ DOMDisplay.prototype.clear = function() {
   this.wrap.parentNode.removeChild(this.wrap);
 };
 
-let display = new DOMDisplay(document.body, simpleLevel);
-
-
 //animacao
-//verifica se tem obstaculo no caminho.
-
+//
 Level.prototype.obstacleAt = function(pos, size) {
   var xStart = Math.floor(pos.x);
   var xEnd = Math.ceil(pos.x + size.x);
@@ -370,6 +366,7 @@ function runAnimation(frameFunc) {
       requestAnimationFrame(frame);
   }
   requestAnimationFrame(frame);
+
 }
 
 var arrows = trackKeys(arrowCodes);
@@ -391,7 +388,7 @@ function runLevel(level, Display, andThen) {
 
 function runGame(plans, Display) {
   function startLevel(n) {
-    runLevel(new Level(plans[n]), Display, function(status) {
+    runLevel(new Level(plans), Display, function(status) {
       if (status == "lost") {
         startLevel(n);
       }
@@ -405,3 +402,8 @@ function runGame(plans, Display) {
   }
   startLevel(0);
 }
+//
+//let simpleLevel = new Level(simpleLevelPlan);
+// console.log("Dimensões do nível: " + simpleLevel.width + " por " + simpleLevel.height);
+// let display = new DOMDisplay(document.body, simpleLevel);
+runGame(simpleLevelPlan, DOMDisplay);
