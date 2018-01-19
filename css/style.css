@@ -43,3 +43,35 @@
   width: 100%;
   height: 100%;
 }
+
+.texto-projeto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 5rem;
+}
+
+.texto-projeto:hover {
+  background-color: lightgray;
+}
+
+.texto-mastertech {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 5rem;
+}
+
+.texto-mastertech:hover {
+  background-color: lightgray;
+}
+
+#aboutPage p {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+#aboutPage img {
+  max-height: 25rem;
+}
